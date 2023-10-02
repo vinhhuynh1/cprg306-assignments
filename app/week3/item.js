@@ -1,14 +1,10 @@
-import React from 'react';
-import ItemList from './item-list';
+export default function Item({ name, quantity, category }) {
+    return (
+        <main class="font-mono text-sm p-2 m-4 bg-sky-300 max-w-sm border-x-8 border-y-8">
 
-export default function Item() {
-    const Item = ({ items, quantity, category }) => {
-        return (
-            <li>
-                <p>{items}</p>
-                <p>Category: {category}</p>
-                <p>Quantity: {quantity}</p>
-            </li>
-        )
-    }
+            <h2 class="text-xl font-bold uppercase">{name}</h2>
+            <li>Buy {quantity} in {category}</li>
+
+        </main>
+    )
 }
