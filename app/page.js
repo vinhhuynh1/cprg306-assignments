@@ -3,7 +3,7 @@ import StudentInfo from "./StudentInfo";
 
 export default function Home() {
   return (
-    <main class="font-mono text-sm h-screen bg-blue-200 text-blue-900">
+    <main class="font-mono text-sm h-screen bg-sky-200 text-blue-900">
 
       <h1 class="text-4xl text-center font-bold">CPRG 306: Web Development 2 - Assignments</h1>
 
