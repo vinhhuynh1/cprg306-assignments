@@ -3,10 +3,17 @@ import StudentInfo from "../StudentInfo"
 
 export default function Week2() {
     return (
-        <main class="font-mono text-sm">
-            <h1 class="text-4xl text-center">My Shopping List</h1>
+        <main class="font-mono text-sm h-screen bg-blue-200 text-blue-900">
+
+            <h1 class="text-4xl text-center font-bold">My Shopping List</h1>
+
             <StudentInfo />
-            <Link class="hover:text-cyan-400 hover:underline" href="../">&lt;- Back</Link>
+
+            <div class="hover:text-cyan-500 hover:underline text-center text-lg">
+                <Link href="../">&lt;- Back</Link>
+
+            </div>
+            
         </main>    
     )
 }

@@ -6,7 +6,7 @@ export default function StudentInfo() {
         <main>
             <p>Name: Vinh Huynh</p>
             <p>Course section: CPRG 306 E</p>
-            <Link class="hover:text-cyan-400 hover:underline " href="https://github.com/vinhhuynh1?tab=repositories">https://github.com/vinhhuynh1?tab=repositories</Link>   
+            <Link class="hover:text-cyan-500 hover:underline " href="https://github.com/vinhhuynh1?tab=repositories">https://github.com/vinhhuynh1?tab=repositories</Link>   
         </main>
     )
 }
