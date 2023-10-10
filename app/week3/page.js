@@ -2,7 +2,7 @@ import Link from "next/link"
 import ItemList from "./item-list"
 
 
-export default function Page() {
+export default function Week3() {
     return(
         <main class="font-mono text-sm bg-sky-200">
 

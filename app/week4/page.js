@@ -3,10 +3,11 @@ import Link from "next/link"
 
 function Week4() {
     return (
-        <main class="font-mono text-sm h-screen bg-sky-200 text-blue-900 flex justify-center w-full">
-            <NewItem />
+        <main class="font-mono h-screen bg-sky-200 text-blue-900">
 
-            <div class="hover:text-cyan-500 hover:underline text-center text-lg">
+            <NewItem />  
+
+            <div class="hover:text-cyan-500 hover:underline text-center text-lg flex items-center ">  
                 <Link href="../">&lt;- Back</Link>
             </div>
 
