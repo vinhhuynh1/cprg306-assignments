@@ -9,10 +9,13 @@ export default function Home() {
 
       <StudentInfo />
 
-      <div class="text-center"> 
+      <div class="text-center font-bold"> 
+      
         <ul><Link class="hover:text-cyan-500 hover:underline" href="week2">Week 2</Link></ul>
         <ul><Link class="hover:text-cyan-500 hover:underline" href="week3">Week 3</Link></ul>
         <ul><Link class="hover:text-cyan-500 hover:underline" href="week4">Week 4</Link></ul>
+        <ul><Link class="hover:text-cyan-500 hover:underline" href="week5">Week 5</Link></ul>
+
       </div>
 
     </main>

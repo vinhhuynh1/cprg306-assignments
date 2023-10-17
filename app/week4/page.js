@@ -7,8 +7,8 @@ function Week4() {
 
             <NewItem />  
 
-            <div class="hover:text-cyan-500 hover:underline text-center text-lg flex items-center ">  
-                <Link href="../">&lt;- Back</Link>
+            <div class="hover:text-cyan-500 hover:underline text-center text-lg flex items-center font-bold">  
+                <Link href="../">&lt;- Home</Link>
             </div>
 
         </main>

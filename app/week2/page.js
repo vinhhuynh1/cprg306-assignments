@@ -9,8 +9,8 @@ export default function Week2() {
 
             <StudentInfo />
 
-            <div class="hover:text-cyan-500 hover:underline text-center text-lg">
-                <Link href="../">&lt;- Back</Link>
+            <div class="hover:text-cyan-500 hover:underline text-center text-lg font-bold">
+                <Link href="../">&lt;- Home</Link>
             </div>
             
         </main>    
