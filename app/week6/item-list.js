@@ -27,7 +27,7 @@ export default function ItemList({items}) {
 
         <main>
             <div>
-                <label class="text-blue-900 font-bold"> Sort by: 
+                <label class="text-blue-900 font-bold pl-5"> Sort by: 
                     <button class={`${sortBy === "name" ? "bg-orange-500" : "bg-red-600"} p-1 m-2 w-28 rounded-md text-white`} onClick = {() => setSortBy("name")}>
                         Name
                     </button>

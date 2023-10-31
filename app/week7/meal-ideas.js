@@ -37,7 +37,7 @@ export default function MealIdea({ ingredient }) {
 
   return (
     <main>
-        <h1 class="p-2 m-4 max-w-sm text-xl font-bold text-blue-900 text-center">
+        <h1 class="p-2 max-w-sm text-xl font-bold text-blue-900 text-center">
             Meal Ideas for {ingredient.charAt(0).toUpperCase() + ingredient.slice(1).toLowerCase()}
         </h1>
 
@@ -76,7 +76,7 @@ export default function MealIdea({ ingredient }) {
         <p class="font-mono text-md p-3 m-4 bg-sky-400 max-w-sm border-x-8 border-y-8 text-white">
             No meals found for this ingredient.
         </p>
-        
+    
         )}
     </main>
   );
