@@ -16,6 +16,7 @@ export default function Home() {
         <ul><Link class="hover:text-cyan-500 hover:underline" href="week4">Week 4</Link></ul>
         <ul><Link class="hover:text-cyan-500 hover:underline" href="week5">Week 5</Link></ul>
         <ul><Link class="hover:text-cyan-500 hover:underline" href="week6">Week 6</Link></ul>
+        <ul><Link class="hover:text-cyan-500 hover:underline" href="week7">Week 7</Link></ul>
         
       </div>
 
