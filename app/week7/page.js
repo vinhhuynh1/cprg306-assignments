@@ -34,14 +34,17 @@ export default function Week7() {
     }
 
     return (
-        <main class="font-mono text-sm bg-sky-200 text-blue-900">
-            <h1 class="text-4xl font-bold">Shopping List</h1>
+        <main>
+            <div class="font-mono text-sm bg-sky-200 text-blue-900 justify-center flex">
+                <h1 class="text-4xl font-bold">Shopping List</h1>
 
-            <NewItem onAddItem={(item) => handleSubmit(item)} />
-            <ItemList items = {items} onItemSelect = {handleItemSelect} />
-            <MealIdeas ingredient={selectedItemName} />
+                <NewItem onAddItem={(item) => handleSubmit(item)} />
+                <ItemList items = {items} onItemSelect = {handleItemSelect} />
+                <MealIdeas ingredient={selectedItemName} />
 
-            <div class="hover:text-cyan-500 hover:underline text-center text-lg font-bold">
+            </div>
+
+            <div class="hover:text-cyan-500 hover:underline text-center text-lg font-bold font-mono bg-sky-200 text-blue-900">
                 <Link href="../">&lt;- Home</Link>
             </div>
         </main>

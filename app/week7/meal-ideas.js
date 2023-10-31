@@ -51,7 +51,7 @@ export default function MealIdea({ ingredient }) {
                             {expendedMeal && expendedMeal.idMeal === meal.idMeal && (
                                 <main class="font-mono text-xs p-2">
                                     <strong>Ingredients needed:</strong>
-                                    <ul class="list-disc pl-5">
+                                    <ul class="list-disc pl-5 font-normal">
                                         {Array.from({length:20}).map((_, index) => {
                                             const ingredientName = expendedMeal[`strIngredient${index + 1}`];
                                             const ingredientMeasure = expendedMeal[`strMeasure${index + 1}`];
