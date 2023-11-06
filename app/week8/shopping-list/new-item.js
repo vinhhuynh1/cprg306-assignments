@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 
 export default function NewItem({onAddItem}) {
@@ -22,7 +23,7 @@ export default function NewItem({onAddItem}) {
         event.preventDefault();
         const item = {
             name, quantity, category
-        };
+        }
 
         console.log(item)
         alert(`Name: ${name} Quantity: ${quantity} Category: ${category}`);

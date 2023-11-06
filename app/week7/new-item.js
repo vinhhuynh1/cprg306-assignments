@@ -37,12 +37,12 @@ export default function NewItem({onAddItem}) {
         <main>
             <form class="p-2 m-4 bg-sky-300 max-w-sm" onSubmit={handleSubmit}>
                 <label class="mb-3">
-                    <input type = "text" placeholder = "Item name" value = {name} onChange = {handleNameChange} required = "" class="w-full mt-1 border-2 border-gray-300 p-2 rounded-lg font-sans"/>
+                    <input type = "text" placeholder = "Item name" value = {name} onChange = {handleNameChange} required = "" class="w-full mt-1 border-2 border-gray-300 p-2 rounded-lg"/>
                 </label>
 
                 <label class="mb-3">
-                    <input type = "number" id = "quantity" min = "1" max = "99" value = {quantity} onChange = {handleQuantityChange} required = "" class="w-20 ml-1 border-2 border-gray-300 p-2 rounded-lg font-sans"/>
-                    <select id = "category" value = {category} onChange = {handleCategoryChange} required = "" class="ml-1 border-2 border-gray-300 p-2 rounded-lg font-sans justify-around">
+                    <input type = "number" id = "quantity" min = "1" max = "99" value = {quantity} onChange = {handleQuantityChange} required = "" class="w-20 ml-1 mt-3 border-2 border-gray-300 p-2 rounded-lg"/>
+                    <select id = "category" value = {category} onChange = {handleCategoryChange} required = "" class="ml-1 mt-3 border-2 border-gray-300 p-2 rounded-lg">
                         <option value = "produce">Produce</option>
                         <option value = "dairy">Dairy</option>
                         <option value = "bakery">Bakery</option>
