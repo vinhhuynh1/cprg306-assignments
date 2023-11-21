@@ -1,14 +1,12 @@
 "use client";
 
-import React, {useState} from "react";
+import { useState, useEffect} from "react";
 import Link from "next/link";
 import ItemList from "./item-list";
 import NewItem from "./new-item";
-import itemsData from "./items.json";
 import MealIdeas from "./meal-ideas";
 import { useUserAuth } from "../_utils/auth-context";
-
-const allItems = [...itemsData]
+import { getItems, addItem } from "../_services/shopping-list-service";
 
 export default function Week7() {
     const { user } = useUserAuth();
@@ -17,17 +15,37 @@ export default function Week7() {
         return <p>Log in to access the shopping list.</p>;
     }
 
-    const [items, setItems] = useState(allItems);
+    const [items, setItems] = useState([]);
     const [selectedItemName, setSelectedItemName] = useState("");
 
-    function handleSubmit (newItem) {
-        alert(`Adding ${item.name}, Quantity: ${item.quantity}, Category: ${item.category} to list`)
-        setItems([...items, newItem]);
+    const loadItems = async () => {
+        const itemsData = await getItems(user.uid);
+        setItems(itemsData);
+    };
+
+    useEffect(() => {
+        loadItems();
+    }, [user.uid]);
+
+    async function handleAddItem(item) {
+        try {
+            const newItemId = await addItem(user.uid, item);
+            setItems((prevItems) => [...prevItems, { id: newItemId, data: item }]);
+        } 
+        
+        catch (error) {
+            console.error("Error adding item:", error.message);
+        }
+      }
+
+    const handleSubmit = (item) => {
+        alert(`Adding ${item.data.name}, Quantity: ${item.data.quantity}, Category: ${item.data.category} to list`)
+        handleAddItem(item);
     }
 
     function handleItemSelect (item) {
-        if (typeof item.name == "string") {
-            const cleanName = item.name
+        if (typeof item.data.name == "string") {
+            const cleanName = item.data.name
                 .split(',')[0]
                 .replace(/[^A-Za-z\s]/g, '')
                 .trim();
@@ -35,7 +53,7 @@ export default function Week7() {
         }
 
         else {
-            console.error("Invalid item name: ", item.name);
+            console.error("Invalid item name: ", item.data.name);
             setSelectedItemName("");
         }
     }

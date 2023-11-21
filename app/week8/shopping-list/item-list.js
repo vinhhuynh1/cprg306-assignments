@@ -25,7 +25,6 @@ export default function ItemList({items, onItemSelect}) {
     const sortedItems = sortItem(Items);
 
     return (
-
         <main>
             <div>
                 <label class="text-blue-900 font-bold pl-3"> Sort by: 
@@ -45,7 +44,6 @@ export default function ItemList({items, onItemSelect}) {
 
             </div>
         </main>
-        
     )
 }
   

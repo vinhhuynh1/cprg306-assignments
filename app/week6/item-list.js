@@ -24,7 +24,6 @@ export default function ItemList({items}) {
     const sortedItems = sortItem(Items);
 
     return (
-
         <main>
             <div>
                 <label class="text-blue-900 font-bold pl-5"> Sort by: 
@@ -43,8 +42,7 @@ export default function ItemList({items}) {
                 {sortedItems.map((item)=>(<Item item={item} key={item.id}/>))}
 
             </div>
-        </main>
-        
+        </main>   
     )
 }
   
