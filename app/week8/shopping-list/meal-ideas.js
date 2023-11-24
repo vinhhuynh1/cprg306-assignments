@@ -14,7 +14,7 @@ async function fetchMealDetails(mealId) {
     return data.meals[0];
 }
 
-export default function MealIdea({ ingredient }) {
+export default function MealIdeas({ ingredient }) {
   const [meals, setMeals] = useState([]);
   const [expendedMeal, setExpendedMeal] = useState(null);
   
